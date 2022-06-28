@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 # Person class definition
 class Person
-  def initialize(age, name = 'unknown', parent_permission = true)
+  def initialize(age, name = 'unknown', parent_permission: true)
     @id = Random.rand(1...7000)
     @name = name
     @age = age

@@ -1,18 +1,18 @@
+# frozen_string_literal: true
+
 require_relative './person'
 
 # Student class definition
 class Student < Person
-  def initialize(age, name = 'unknown', parent_permission: true, classroom)
+  def initialize(age, classroom, name = 'unknown', parent_permission: true)
     super(age, name, parent_permission: parent_permission)
 
     @classroom = classroom
   end
 
-  attr_reader :classroom 
+  attr_reader :classroom
 
   def play_hooky
     "¯\(ツ)/¯"
   end
 end
-
-
