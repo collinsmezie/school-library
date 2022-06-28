@@ -1,10 +1,11 @@
+# frozen_string_literal: true
+
 require_relative './person'
 
+# Student class definition
 class Student < Person
   def initialize(classroom)
-    # super(age, name, parent_permission: parent_permission)
-    super(25, "collins", false)
-
+    super(age, name, parent_permission: parent_permission)
     @classroom = classroom
   end
 
