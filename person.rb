@@ -1,6 +1,6 @@
 # Person class definition
 class Person
-  def initialize(age, name = 'unknown', parent_permission: true)
+  def initialize(age, name = 'unknown', parent_permission = true)
     @id = Random.rand(1...7000)
     @name = name
     @age = age
@@ -10,7 +10,7 @@ class Person
   # accessor get method
   attr_reader :id
   # accessor set method
-  attr_accessor :name, :age
+  attr_accessor :name, :age, :parent_permission
 
   def of_age?
     @age >= 18
