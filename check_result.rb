@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require_relative './person'
 require_relative './CapitalizeDecorator'
 require_relative './TrimmerDecorator'
