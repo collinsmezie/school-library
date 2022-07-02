@@ -1,6 +1,3 @@
-# rubocop:disable Metrics/ClassLength
-# rubocop:disable Metrics/MethodLength
-# rubocop:disable Metrics/AbcSize
 require_relative './book'
 require_relative './teacher'
 require_relative './student'
@@ -148,7 +145,3 @@ class App
     end
   end
 end
-
-# rubocop:enable Metrics/ClassLength
-# rubocop:enable Metrics/MethodLength
-# rubocop:enable Metrics/AbcSize
