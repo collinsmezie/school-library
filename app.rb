@@ -28,9 +28,9 @@ class App
     choice = menu.to_s
     case choice
     when '1'
-      list_all_books
+      make_books
     when '2'
-      list_all_person
+      make_persons
     when '3'
       create_person
     when '4'
@@ -143,5 +143,6 @@ class App
         puts "Date: #{item.date}, Book:\"#{item.book.title}\" by #{item.book.author}"
       end
     end
+    menu_run
   end
 end
