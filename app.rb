@@ -129,6 +129,7 @@ class App
     end
     @person.push(student)
   end
+
   def create_teacher
     puts 'enter name: '
     name = gets.chomp
@@ -146,7 +147,6 @@ class App
     end
     @person.push(teacher)
   end
-
 
   def list_all_rentals_for_a_given_person_id
     puts 'Please enter a person id: '
